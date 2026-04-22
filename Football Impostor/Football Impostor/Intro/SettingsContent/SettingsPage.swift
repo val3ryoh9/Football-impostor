@@ -20,7 +20,7 @@ struct SettingsPage: View {
             
             ScrollView {
                 VStack {
-                    General(selectedAppearance: $selectedAppearance, mostraScelte: $mostraScelte)
+                    General(mostraScelte: $mostraScelte)
                     Feedback().padding(.top, 16)
                     FollowUs().padding(.top, 16)
                 }

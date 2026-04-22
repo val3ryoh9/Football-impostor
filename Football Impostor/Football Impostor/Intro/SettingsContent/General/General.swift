@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct General: View {
-    @Binding var selectedAppearance: Int
     @Binding var mostraScelte: Bool
     
     var body: some View {
@@ -14,7 +13,7 @@ struct General: View {
                     .padding(.horizontal, 20)
                     .padding(.top, 20)
                 
-                Appearance(selectedAppearance: $selectedAppearance, mostraScelte: $mostraScelte)
+                Appearance(mostraScelte: $mostraScelte)
                 
                 Language()
                 

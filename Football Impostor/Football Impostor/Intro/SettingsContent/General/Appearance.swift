@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct Appearance: View {
-    @Binding var selectedAppearance: Int
     @Binding var mostraScelte: Bool
     
     var body: some View {
@@ -35,7 +34,6 @@ struct Appearance: View {
 
 #Preview {
     Appearance(
-        selectedAppearance: .constant(0),
         mostraScelte: .constant(false)
     )
 }

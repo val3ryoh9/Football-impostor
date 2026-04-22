@@ -43,14 +43,3 @@ struct CustomDialogView: View {
         }
     }
 }
-
-/*
- Button("A pri Dialog Personalizzato") {
-             mostraDialog = true
-         }
-         // Qui carichi il tuo contenuto interno
-         .sheet(isPresented: $mostraDialog) {
-             CustomDialogView(isPresented: $mostraDialog)
-                 .presentationDetents([.medium, .large]) // Decide quanto deve aprirsi
-         }
- */
