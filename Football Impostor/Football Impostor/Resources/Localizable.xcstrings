@@ -1,0 +1,68 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Apparenza" : {
+
+    },
+    "Avvia il gioco" : {
+
+    },
+    "Chiudi" : {
+
+    },
+    "Condividi con gli amici" : {
+
+    },
+    "Domande" : {
+
+    },
+    "Effetti Sonori" : {
+
+    },
+    "Elimina tutti i giocatori" : {
+
+    },
+    "Feedback" : {
+
+    },
+    "Generale" : {
+
+    },
+    "Instagram" : {
+
+    },
+    "Lingua" : {
+
+    },
+    "Scegli Apparenza" : {
+
+    },
+    "Seguici" : {
+
+    },
+    "Settings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
+          }
+        }
+      }
+    },
+    "Valuta l'app" : {
+
+    },
+    "Voce %lld" : {
+
+    }
+  },
+  "version" : "1.2"
+}
