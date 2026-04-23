@@ -8,6 +8,12 @@
             "state" : "translated",
             "value" : "Appearance"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apparenza"
+          }
         }
       }
     },
@@ -40,6 +46,9 @@
           }
         }
       }
+    },
+    "Configurazione Partita" : {
+
     },
     "Domande" : {
       "localizations" : {
@@ -111,6 +120,9 @@
         }
       }
     },
+    "Prima di iniziare" : {
+
+    },
     "Scegli Apparenza" : {
       "localizations" : {
         "en" : {
@@ -130,6 +142,9 @@
           }
         }
       }
+    },
+    "Seleziona il numero di giocatori" : {
+
     },
     "Seleziona Lingua" : {
       "localizations" : {
