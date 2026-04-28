@@ -9,7 +9,6 @@ struct SoundEffect: View {
             HStack(spacing: 15) {
                 Image("soundIcon")
                     .resizable()
-                    .renderingMode(.template)
                     .scaledToFit()
                     .frame(width: 30, height: 30)
                     .foregroundColor(.primary)
@@ -18,16 +17,16 @@ struct SoundEffect: View {
                     .font(.headline)
                     .foregroundColor(.primary)
             }
-            .padding(.horizontal)
-            .frame(height: 45)
-            .background(Color(.secondarySystemBackground))
-            .cornerRadius(12)
         }
+        .toggleStyle(SwitchToggleStyle(tint: .green))
+        .padding(.horizontal)
+        .frame(height: 50)
+        .background(Color(.secondarySystemBackground))
+        .cornerRadius(12)
         .padding(.horizontal, 20)
-        .toggleStyle(SwitchToggleStyle(tint: .primary))
     }
 }
 
 #Preview {
-    SettingsPage()
+    SoundEffect()
 }

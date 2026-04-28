@@ -24,6 +24,12 @@
             "state" : "translated",
             "value" : "Start the game"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avvia il gioco"
+          }
         }
       }
     },
@@ -33,6 +39,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Close"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
           }
         }
       }
@@ -44,11 +56,30 @@
             "state" : "translated",
             "value" : "Share with friends"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condividi con gli amici "
+          }
         }
       }
     },
     "Configurazione Partita" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Match Configuration"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Configurazione della partita"
+          }
+        }
+      }
     },
     "Domande" : {
       "localizations" : {
@@ -56,6 +87,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Questions"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domanda"
           }
         }
       }
@@ -67,6 +104,12 @@
             "state" : "translated",
             "value" : "Sound Effect"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Effetti Sonori"
+          }
         }
       }
     },
@@ -77,12 +120,24 @@
             "state" : "translated",
             "value" : "Delete all players"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina tutti i giocatori"
+          }
         }
       }
     },
     "Feedback" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Feedback"
@@ -97,12 +152,57 @@
             "state" : "translated",
             "value" : "General"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generale"
+          }
+        }
+      }
+    },
+    "Giocatori selezionati: %lld" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selected Players:"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Giocatori Selezionati:"
+          }
+        }
+      }
+    },
+    "Impostazioni" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
+          }
         }
       }
     },
     "Instagram" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram"
@@ -117,11 +217,30 @@
             "state" : "translated",
             "value" : "Language"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lingua"
+          }
         }
       }
     },
     "Prima di iniziare" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Before start"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Prima di iniziare"
+          }
+        }
+      }
     },
     "Scegli Apparenza" : {
       "localizations" : {
@@ -129,6 +248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choose Appearance"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli Apparenza"
           }
         }
       }
@@ -140,11 +265,30 @@
             "state" : "translated",
             "value" : "Follow us"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seguici"
+          }
         }
       }
     },
     "Seleziona il numero di giocatori" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select the number of players"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Seleziona il numero di giocatori"
+          }
+        }
+      }
     },
     "Seleziona Lingua" : {
       "localizations" : {
@@ -153,11 +297,16 @@
             "state" : "translated",
             "value" : "Choose Language"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona Lingua"
+          }
         }
       }
     },
     "Settings" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -180,11 +329,30 @@
             "state" : "translated",
             "value" : "Rate the app"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valuta l’app"
+          }
         }
       }
     },
     "Voce %lld" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voice"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voce"
+          }
+        }
+      }
     }
   },
   "version" : "1.2"

@@ -11,10 +11,12 @@ import SwiftUI
 struct Football_ImpostorApp: App {
 
     @AppStorage("selectedLanguage") private var selectedLanguage = "en"
+    @StateObject private var themeManager = ThemeManager()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(themeManager)
                 .environment(\.locale, .init(identifier: selectedLanguage))
         }
     }

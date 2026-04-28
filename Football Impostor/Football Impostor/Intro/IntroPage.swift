@@ -1,13 +1,15 @@
 import SwiftUI
 
 struct IntroPage: View {
-        
+    
+    @EnvironmentObject var theme: ThemeManager
+    
     var body: some View {
         
         // usato per permettere agli elementi di navigare tra pagine diverse
         NavigationStack {
             ZStack {
-                Color.indigo.ignoresSafeArea() // usato per colorare anche dietro il notch
+                Color(.systemBackground).ignoresSafeArea()
                 
                 VStack {
                     
@@ -17,24 +19,23 @@ struct IntroPage: View {
                         Spacer()
                         
                         HStack {
-                            Button(action: {}) {
+                            NavigationLink(destination: MatchConfigurator()) {
                                 Text("Avvia il gioco")
                                     .font(.headline)
                                     .padding()
-                                    .background(Color.white)
-                                    .foregroundColor(.indigo)
+                                    .foregroundColor(Color(.systemBackground))
                                     .cornerRadius(10)
-                            }
+                            }.glassEffect(.regular.interactive().tint(.green))
                         }
                     }
                     
                     CustomBottomBar()
                 }
             }
-        }
+        }.preferredColorScheme(theme.selectedScheme)
     }
 }
 
 #Preview {
-    IntroPage()
+    IntroPage().environmentObject(ThemeManager())
 }

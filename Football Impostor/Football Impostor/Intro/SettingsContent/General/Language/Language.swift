@@ -1,7 +1,13 @@
 import SwiftUI
 
 struct Language: View {
-    @AppStorage("selectedLanguage") private var selectedLanguage: String = "it"
+    
+    static var deviceLanguage: String {
+        Locale.current.language.languageCode?.identifier ?? "en"
+    }
+
+    @AppStorage("selectedLanguage") private var selectedLanguage: String = Language.deviceLanguage
+    
     @State private var showingDialog = false
 
     var body: some View {

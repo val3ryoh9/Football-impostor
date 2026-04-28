@@ -2,17 +2,9 @@ import SwiftUI
 
 struct SettingsPage: View {
     
-    @AppStorage("selectedAppearance") var selectedAppearance: Int = 0
+    @EnvironmentObject var theme: ThemeManager
     @State private var mostraScelte = false
     @State private var mostraDialog = false
-
-    func getScheme() -> ColorScheme? {
-        switch selectedAppearance {
-        case 1: return .light
-        case 2: return .dark
-        default: return nil
-        }
-    }
     
     var body: some View {
         ZStack {
@@ -32,16 +24,16 @@ struct SettingsPage: View {
                     .ignoresSafeArea()
                     .onTapGesture { withAnimation { mostraScelte = false } }
                 
-                CustomDialogView(selectedAppearance: $selectedAppearance, mostraScelte: $mostraScelte)
+                CustomDialogView(selectedAppearance: theme.$selectedAppearance, mostraScelte: $mostraScelte)
             }
             
         }
-        .preferredColorScheme(getScheme())
-        .animation(.easeInOut(duration: 0.5), value: selectedAppearance)
+        .preferredColorScheme(theme.selectedScheme)
+        .animation(.easeInOut(duration: 0.5), value: theme.selectedAppearance)
     }
 }
 
 
 #Preview {
-    SettingsPage()
+    SettingsPage().environmentObject(ThemeManager())
 }
