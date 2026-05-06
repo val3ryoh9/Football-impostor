@@ -25,9 +25,30 @@ struct MatchConfigurator: View {
                 .foregroundColor(.secondary)
             
             VStack(spacing: 20) {
-                Text("Giocatori selezionati: \(displayPlayers)")
+                Text("Seleziona il numero di giocatori: ")
                     .font(.system(size: 25, weight: .bold))
-                    .padding(.top, 40)
+                    .padding(.top, 20)
+                    .frame(width: 368)
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.green, .black],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
+                
+                VStack {
+                    Text("\(displayPlayers)")
+                        .font(.system(size: 40, weight: .bold))
+                        .padding(.top, 20)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors: [.green, .black],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                }
                 
                 CustomSlider(value: $selectedPlayers, range: 4...20, imageName: "soccer-ball-nobg")
                     .padding()
@@ -77,14 +98,19 @@ struct MatchConfigurator: View {
             
             Spacer()
             
-            Button(action: { print("Gioco avviato") }) {
+            NavigationLink(destination: {}) {
                 Text("Avvia il gioco")
                     .font(.headline)
                     .frame(maxWidth: .infinity)
                     .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
+                    .background(LinearGradient(
+                        colors: [.green, .gray, .black],
+                        startPoint: .topLeading,
+                        endPoint: .bottomTrailing
+                    ))
+                    .foregroundStyle(.white)
                     .cornerRadius(12)
+                    .shadow(radius: 8)
             }
         }
         .padding(24)
@@ -105,6 +131,15 @@ struct MatchConfigurator: View {
                     .font(.title2)
             }
             .disabled(value.wrappedValue <= 0)
+            .foregroundStyle(
+                value.wrappedValue <= 0
+                ? AnyShapeStyle(Color.gray)
+                : AnyShapeStyle(LinearGradient(
+                    colors: [.green, .black],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing)
+            ))
+            .opacity(value.wrappedValue == 0 ? 0 : 1)
             
             Tag(text: label, color: color, number: Int(value.wrappedValue))
             
@@ -118,6 +153,15 @@ struct MatchConfigurator: View {
                     .font(.title2)
             }
             .disabled(linkedValue.wrappedValue <= 0)
+            .foregroundStyle(
+                linkedValue.wrappedValue <= 0
+                ? AnyShapeStyle(Color.gray)
+                : AnyShapeStyle(LinearGradient(
+                    colors: [.green, .black],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing)
+            ))
+            .opacity(linkedValue.wrappedValue == 0 ? 0 : 1)
         }
     }
 }

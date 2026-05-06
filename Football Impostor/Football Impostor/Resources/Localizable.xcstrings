@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld" : {
+
+    },
     "Apparenza" : {
       "localizations" : {
         "en" : {
@@ -162,6 +165,7 @@
       }
     },
     "Giocatori selezionati: %lld" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -275,6 +279,7 @@
       }
     },
     "Seleziona il numero di giocatori" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -289,6 +294,9 @@
           }
         }
       }
+    },
+    "Seleziona il numero di giocatori: " : {
+
     },
     "Seleziona Lingua" : {
       "localizations" : {
