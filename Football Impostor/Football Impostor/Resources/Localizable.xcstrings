@@ -164,23 +164,6 @@
         }
       }
     },
-    "Giocatori selezionati: %lld" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Selected Players:"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Giocatori Selezionati:"
-          }
-        }
-      }
-    },
     "Impostazioni" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -274,23 +257,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seguici"
-          }
-        }
-      }
-    },
-    "Seleziona il numero di giocatori" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Select the number of players"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Seleziona il numero di giocatori"
           }
         }
       }

@@ -62,7 +62,7 @@ struct MatchConfigurator: View {
             VStack {
                 HStack {
                     Spacer()
-                    Tag(text: "Onesti", color: Color.green, number: fixedCivilians)
+                    Tag(text: "Civili", color: Color.green, number: fixedCivilians)
                     Spacer()
                 }.padding(.top, 16)
                 
@@ -98,7 +98,7 @@ struct MatchConfigurator: View {
             
             Spacer()
             
-            NavigationLink(destination: {}) {
+            NavigationLink(destination: SelectPlayerMenu()) {
                 Text("Avvia il gioco")
                     .font(.headline)
                     .frame(maxWidth: .infinity)
